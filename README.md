@@ -70,11 +70,14 @@ Removing the Pool Animation
 The water ripple is controlled by a script at the end of the file. To disable it, delete or comment out this line:
 
 javascript
+
 document.querySelector('#waterPlane').setAttribute('water-ripple', '');
+
 Adding or Removing Objects
 The scene is built entirely with A‑Frame entities. You can add, remove, or edit any element by modifying the HTML.
 
 Technical Notes
+
 The water animation uses a custom A‑Frame component (water-ripple) that updates the water plane’s Y‑position with a sine wave, creating a gentle ripple effect without a heavy physics engine.
 
 Shadows are enabled for the directional light and key objects to improve realism.
